@@ -2,9 +2,6 @@ import pyttsx3, time
 
 
 engine = pyttsx3.init() 
-("Hi, I am text to speach") 
-
-
 engine.say("Welcome to Autumn Bank")
 engine.runAndWait()
 Trials = 3
@@ -15,7 +12,7 @@ while Trials !=0:
     if code != pincode:
         Trials -=1
         if Trials != 0:
-            engine.say("You have", Trials, "tries left")
+            print("You have", Trials, "tries left")
             engine.runAndWait()
         if Trials == 0:
             engine.say("You have exhausted your 3 trials, CONTACT YOUR BANK")
